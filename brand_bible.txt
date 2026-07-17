@@ -1,0 +1,94 @@
+Kushel Wellness Club
+Brand Bible
+Version 1.0
+This document is the single source of truth for the Kushel Wellness Club brand and should be used together with the implementation_plan.md during website development. It defines the identity, philosophy, content, structure, user journey, and functional expectations for the MVP website.
+Purpose
+Build a premium, community-first wellness website that helps visitors become engaged community members through education, guidance, accountability and sustainable habits.
+Brand Identity
+Name: Kushel Wellness Club
+Tagline: Building Healthier Lives, One Habit at a Time.
+Positioning: A community-driven wellness platform helping individuals and families build healthier lifestyles.
+Mission
+Helping individuals and families build healthier lifestyles through personalized guidance, balanced nutrition, supportive community, daily accountability, and sustainable habits.
+Vision
+To build India's most trusted wellness community, empowering families to become healthier together.
+Core Values
+Community
+Guidance
+Education
+Accountability
+Compassion
+Integrity
+Four Pillars
+Guidance
+Community
+Accountability
+Sustainable Habits
+Coach
+Lead Coach: Anjala Patel
+Approachable, supportive and community-focused wellness coach.
+Kushel Wellness Journey™
+Discover → Assess → Experience → Connect → Begin → Belong → Build → Strengthen → Transform → Inspire → Multiply → Lead
+Programs & Experiences
+• Motivational Monday
+• Transformational Tuesday
+• Body Transformation Challenge
+• Thursday Threshold
+• Friday Recognition & Celebration
+• Saturday Special
+• Happy to Help
+• Women's Wellness & Leadership
+• Family Wellness Sessions
+• Beginner Wellness Orientation
+• Ambassador Evening
+• Future Community Leaders
+• Star Parivaar Awards
+• Transformation Stories Showcase
+• Seasonal Experiences
+• Exclusive Member Experiences
+Wellness Resources
+7, 30 & 90 Day Healthy Habit Challenges
+Personal Wellness Journal
+Community Handbook
+BMI Guide
+Beginner Wellness Guide
+Wellness Journey Roadmap
+Interactive Tools
+BMI Calculator
+Water Intake Calculator
+Protein Calculator
+Ideal Weight Calculator
+Wellness Streak
+Conversion Strategy
+Educate → Build Trust → Experience Community → Consultation → Membership → Transformation → Leadership
+Website Navigation
+Home
+About
+Experiences
+Wellness Journey
+Resources
+Tools
+Success Stories
+Contact
+Design Direction
+Premium, warm, modern, community-first. Calm colours, generous whitespace, accessible, mobile-first, GitHub Pages compatible.
+SEO
+Target India with emphasis on Wellness Coach, Healthy Lifestyle, Community Wellness, Family Wellness, Healthy Habits.
+Footer
+Contact
+Resources
+Social Links
+Legal & Compliance (separate document)
+Privacy Policy
+Terms & Conditions (future)
+Website Development Instructions
+Use this Brand Bible together with implementation_plan.md. The implementation plan defines the technical architecture, while this Brand Bible defines content, branding, UX, messaging, and user journey. If a conflict arises, preserve the technical architecture from the implementation plan while following the brand, tone, and community philosophy defined in this Brand Bible.
+Parking Lot (Not Part of MVP)
+Expanded FAQs
+Additional Success Stories
+Extended Downloads
+Media Library Expansion
+Future Kushel Coach Integration
+Corporate Wellness
+Online Courses
+Advanced Member Portal

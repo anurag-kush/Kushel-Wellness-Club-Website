@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kushel Wellness Club</title>
+    <meta name="description" content="Get in touch with Kushel Wellness Club to book a free consultation and start your wellness journey.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <meta property="og:title" content="Contact Kushel Wellness Club">
+    <meta property="og:description" content="Book your free wellness consultation today.">
+    <link rel="canonical" href="https://example.com/contact.html">
+    <style>
+        .contact-info-card {
+            background: var(--dark-green);
+            color: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            height: 100%;
+        }
+        .contact-form-card {
+            background: var(--white);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: var(--light-grey);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            margin-top: var(--space-md);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container" aria-label="Kushel Wellness Club Home">
+                <span class="logo-text">Kushel Wellness Club</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+                &#9776;
+            </button>
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="programs.html" class="nav-link">Experiences</a>
+                <a href="calculators.html" class="nav-link">Tools</a>
+                <a href="success-stories.html" class="nav-link">Success Stories</a>
+                <a href="contact.html" class="nav-link active btn btn-primary text-white" style="color: white;" aria-current="page">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section section-bg-light text-center" style="padding: var(--space-xl) 0;">
+        <div class="container">
+            <h1 class="text-dark">Get in Touch</h1>
+            <p class="text-light" style="max-width: 600px; margin: 0 auto;">Ready to start your wellness journey? We're here to answer any questions and help you take the first step.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: stretch;">
+                
+                <!-- Contact Info -->
+                <div class="contact-info-card">
+                    <h2 class="text-white mb-4">Contact Information</h2>
+                    <p style="color: rgba(255,255,255,0.8);" class="mb-4">Reach out to us via email, phone, or simply fill out the form. We respond to all inquiries within 24 hours.</p>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-gold" style="color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 5px;">Email</h3>
+                        <p>hello@kushelwellness.com</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-gold" style="color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 5px;">Phone / WhatsApp</h3>
+                        <p>+91 00000 00000</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-gold" style="color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 5px;">Business Hours</h3>
+                        <p>Monday - Saturday: 8:00 AM - 8:00 PM<br>Sunday: Closed</p>
+                    </div>
+
+                    <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" class="btn btn-gold mt-3">
+                        Message on WhatsApp
+                    </a>
+
+                    <div class="map-placeholder mt-5">
+                        [Embedded Google Map Placeholder]
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h2 class="text-dark mb-4">Send Us a Message</h2>
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted successfully! (This is a frontend demo)');">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 00000 00000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="interest">Area of Interest</label>
+                            <select id="interest" name="interest" class="form-control" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="weight_management">Weight Management</option>
+                                <option value="family_wellness">Family Wellness</option>
+                                <option value="general_health">General Health & Energy</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100" style="width: 100%; margin-top: 10px;">Send Message</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4">
+                <div>
+                    <h3>Kushel Wellness Club</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Building Healthier Lives, One Habit at a Time.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Experiences</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="calculators.html">Wellness Tools</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Kushel Wellness Club. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

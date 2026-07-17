@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Kushel Wellness Club</title>
+    <meta name="description" content="Frequently asked questions about Kushel Wellness Club's coaching programs, community, and how to get started.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <meta property="og:title" content="FAQ | Kushel Wellness Club">
+    <meta property="og:description" content="Get answers to common questions about our wellness programs.">
+    <link rel="canonical" href="https://example.com/faq.html">
+    <style>
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: var(--space-md);
+        }
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: var(--space-md) 0;
+            font-family: var(--font-primary);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark-green);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-green);
+        }
+        .faq-question[aria-expanded="true"]::after {
+            content: '-';
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: var(--space-md);
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container" aria-label="Kushel Wellness Club Home">
+                <span class="logo-text">Kushel Wellness Club</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+                &#9776;
+            </button>
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="programs.html" class="nav-link">Experiences</a>
+                <a href="calculators.html" class="nav-link">Tools</a>
+                <a href="success-stories.html" class="nav-link">Success Stories</a>
+                <a href="contact.html" class="nav-link btn btn-primary text-white" style="color: white;">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section section-bg-dark text-center" style="padding: var(--space-xl) 0;">
+        <div class="container">
+            <h1 class="text-white">Frequently Asked Questions</h1>
+            <p style="color: rgba(255,255,255,0.8); max-width: 700px; margin: 0 auto;">Everything you need to know about joining Kushel Wellness Club.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">How does coaching work?</button>
+                    <div class="faq-answer">
+                        <p>Our coaching is highly personalized. You start with a free wellness assessment to understand your goals. Based on the assessment, Coach Anjala and the team create a tailored nutrition and lifestyle plan for you. You will receive daily accountability check-ins, access to community experiences, and ongoing support to ensure you stay on track.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Is coaching online?</button>
+                    <div class="faq-answer">
+                        <p>Yes, the majority of our coaching and community experiences are conducted online, allowing you to participate from anywhere in India. We use WhatsApp for daily accountability and host weekly sessions like "Motivational Monday" and "Transformational Tuesday" via video calls.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Do I need a gym?</button>
+                    <div class="faq-answer">
+                        <p>No, you do not need a gym membership to see results. Our approach focuses primarily on balanced nutrition (80%) and an active lifestyle (20%). We provide recommendations for home-based workouts, walking routines, and active family activities that fit seamlessly into your day.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">How long before results?</button>
+                    <div class="faq-answer">
+                        <p>Results vary from person to person depending on their starting point and consistency. Many members notice improvements in energy levels and digestion within the first 1-2 weeks. Visible weight management and habit transformation usually become evident within 30 to 90 days of consistent effort.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">How do I join?</button>
+                    <div class="faq-answer">
+                        <p>The first step is simply to book a FREE Wellness Consultation with us. You can do this by clicking the "Contact" button or messaging us directly on WhatsApp. During the call, we will discuss your goals and determine the best program for you.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <h3 class="mb-3">Still have questions?</h3>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4">
+                <div>
+                    <h3>Kushel Wellness Club</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Building Healthier Lives, One Habit at a Time.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Experiences</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="calculators.html">Wellness Tools</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Kushel Wellness Club. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

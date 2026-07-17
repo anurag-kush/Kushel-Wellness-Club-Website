@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Tools & Calculators | Kushel Wellness Club</title>
+    <meta name="description" content="Free wellness tools including BMI, water intake, protein, and calorie calculators to help you plan your health journey.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <meta property="og:title" content="Wellness Tools | Kushel Wellness Club">
+    <meta property="og:description" content="Interactive tools to help you track your health.">
+    <link rel="canonical" href="https://example.com/calculators.html">
+    <style>
+        .calculator-card { margin-bottom: var(--space-xl); background: var(--white); border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); }
+        .result-box { margin-top: var(--space-md); padding: var(--space-md); border-radius: var(--radius-sm); background-color: var(--light-grey); display: none; }
+        .result-box.active { display: block; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container" aria-label="Kushel Wellness Club Home">
+                <span class="logo-text">Kushel Wellness Club</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+                &#9776;
+            </button>
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="programs.html" class="nav-link">Experiences</a>
+                <a href="calculators.html" class="nav-link active" aria-current="page">Tools</a>
+                <a href="success-stories.html" class="nav-link">Success Stories</a>
+                <a href="contact.html" class="nav-link btn btn-primary text-white" style="color: white;">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section section-bg-dark text-center" style="padding: var(--space-xl) 0;">
+        <div class="container">
+            <h1 class="text-white">Wellness Tools & Calculators</h1>
+            <p style="color: rgba(255,255,255,0.8); max-width: 700px; margin: 0 auto;">Use these free tools to estimate your daily requirements and track your progress.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- BMI Calculator -->
+                <div class="calculator-card" id="bmi-calculator">
+                    <h2 class="text-primary mb-3">BMI Calculator</h2>
+                    <p class="text-light mb-4">Calculate your Body Mass Index (BMI) to understand your current weight category.</p>
+                    <form id="bmi-form" onsubmit="event.preventDefault(); calculateBMI();">
+                        <div class="form-group">
+                            <label class="form-label" for="bmi-weight">Weight (kg)</label>
+                            <input type="number" class="form-control" id="bmi-weight" required min="20" max="300" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="bmi-height">Height (cm)</label>
+                            <input type="number" class="form-control" id="bmi-height" required min="50" max="250" step="0.1">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" style="width: 100%;">Calculate BMI</button>
+                    </form>
+                    <div id="bmi-result" class="result-box"></div>
+                </div>
+
+                <!-- Water Intake Calculator -->
+                <div class="calculator-card" id="water-calculator">
+                    <h2 class="text-primary mb-3">Water Intake Calculator</h2>
+                    <p class="text-light mb-4">Estimate how much water you should drink daily based on your weight and activity.</p>
+                    <form id="water-form" onsubmit="event.preventDefault(); calculateWater();">
+                        <div class="form-group">
+                            <label class="form-label" for="water-weight">Weight (kg)</label>
+                            <input type="number" class="form-control" id="water-weight" required min="20" max="300" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="water-activity">Activity Level</label>
+                            <select class="form-control" id="water-activity" required>
+                                <option value="low">Low (Little to no exercise)</option>
+                                <option value="medium">Medium (Moderate exercise 3-5 days/wk)</option>
+                                <option value="high">High (Heavy exercise 6-7 days/wk)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" style="width: 100%;">Calculate Water Intake</button>
+                    </form>
+                    <div id="water-result" class="result-box"></div>
+                </div>
+
+                <!-- Protein Calculator -->
+                <div class="calculator-card" id="protein-calculator">
+                    <h2 class="text-primary mb-3">Protein Calculator</h2>
+                    <p class="text-light mb-4">Discover your daily protein needs to support muscle health and recovery.</p>
+                    <form id="protein-form" onsubmit="event.preventDefault(); calculateProtein();">
+                        <div class="form-group">
+                            <label class="form-label" for="protein-weight">Weight (kg)</label>
+                            <input type="number" class="form-control" id="protein-weight" required min="20" max="300" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="protein-goal">Primary Goal</label>
+                            <select class="form-control" id="protein-goal" required>
+                                <option value="maintain">Maintain Health</option>
+                                <option value="build">Build Muscle</option>
+                                <option value="lose">Lose Weight (Preserve Muscle)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" style="width: 100%;">Calculate Protein</button>
+                    </form>
+                    <div id="protein-result" class="result-box"></div>
+                </div>
+
+                <!-- Calorie Calculator -->
+                <div class="calculator-card" id="calorie-calculator">
+                    <h2 class="text-primary mb-3">Daily Calorie Calculator</h2>
+                    <p class="text-light mb-4">Estimate your Total Daily Energy Expenditure (TDEE).</p>
+                    <form id="calorie-form" onsubmit="event.preventDefault(); calculateCalorie();">
+                        <div class="form-group">
+                            <label class="form-label" for="cal-age">Age</label>
+                            <input type="number" class="form-control" id="cal-age" required min="15" max="100">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Gender</label>
+                            <div style="display: flex; gap: var(--space-md); margin-top: var(--space-xs);">
+                                <label><input type="radio" name="cal-gender" value="male" required> Male</label>
+                                <label><input type="radio" name="cal-gender" value="female"> Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cal-weight">Weight (kg)</label>
+                            <input type="number" class="form-control" id="cal-weight" required min="20" max="300" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cal-height">Height (cm)</label>
+                            <input type="number" class="form-control" id="cal-height" required min="50" max="250" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cal-activity">Activity Level</label>
+                            <select class="form-control" id="cal-activity" required>
+                                <option value="1.2">Sedentary</option>
+                                <option value="1.375">Lightly Active</option>
+                                <option value="1.55">Moderately Active</option>
+                                <option value="1.725">Very Active</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" style="width: 100%;">Calculate Calories</button>
+                    </form>
+                    <div id="calorie-result" class="result-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4">
+                <div>
+                    <h3>Kushel Wellness Club</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Building Healthier Lives, One Habit at a Time.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Experiences</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="calculators.html">Wellness Tools</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Kushel Wellness Club. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bmi.js"></script>
+    <script src="assets/js/water.js"></script>
+    <script src="assets/js/protein.js"></script>
+    <script src="assets/js/calorie.js"></script>
+</body>
+</html>
